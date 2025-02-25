@@ -1,0 +1,42 @@
+{
+  "terminal.integrated.defaultProfile.windows": "Git Bash", // 터미널 기본 프로필을 Git Bash로 설정
+  "editor.fontFamily": "D2Coding, Consolas, 'Courier New', monospace", // 폰트 설정
+
+  "window.zoomLevel": 2, // 화면 기본 확대 비율 2배로
+  "editor.mouseWheelZoom": true, // 마우스 휠로 줌 가능
+  "workbench.iconTheme": "vscode-icons", // 아이콘 테마
+
+  "security.workspace.trust.untrustedFiles": "open", // 기본 파일 바로 열람
+  "files.autoSave": "afterDelay", // 수정 시 자동 저장
+  "files.autoSaveDelay": 2000, // 수정 시 자동 저장시간 설정 (2초)
+
+  "editor.minimap.enabled": false, // 미니맵 비활성화
+  "explorer.confirmDelete": false, // 파일 삭제 시, 추가 확인하지 않음
+  "files.enableTrash": true, // 파일 삭제 시, 쓰레기통으로 이동
+
+  // 에디터 들여쓰기 사이즈, 각 언어별로 설정
+  // html:2, css:4, javascript:2
+  "[html]": {
+    "editor.tabSize": 2
+  },
+  "[css]": {
+    "editor.tabSize": 4
+  },
+  "[javascript]": {
+    "editor.tabSize": 2
+  },
+
+  // formatter(prettier) 설정 : 저장 시, 자동 포맷팅
+  "editor.formatOnSave": true, // 저장 시, 자동 포맷팅
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // 포맷터 설정
+  "prettier.htmlWhitespaceSensitivity": "ignore", // html 공백 무시
+  "prettier.printWidth": 200, // 줄바꿈 길이 200자로 설정
+  "prettier.semi": true, // 자바스크립트 세미콜론 사용
+
+  // Vue 설정
+  "vue.complete.casing.tags": "pascal", // 태그 이름 대문자로
+  "vue.complete.casing.props": "kebab", // 속성 이름 소문자로
+  "vue.autoInsert.dotValue": true, // 자동으로 .value 추가
+  "vue.format.wrapAttributes": "force", // 속성 강제 줄바꿈
+  "vue.inlayHints.vBindShorthand": true // v-bind 단축 표현 사용
+}
